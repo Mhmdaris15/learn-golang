@@ -14,6 +14,12 @@ func main()  {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
+	// A slice of names.
+	names := []string {"Zhang", "San", "Li", "Si", "Wang", "Wu"}
+
+	// Request greeting messages for the names
+	messages, err := greetings.Hellos(names)
+
 	// Request a greeting message.
 	message, err := greetings.Hello("Aris")
 	if err != nil {
@@ -25,4 +31,9 @@ func main()  {
 	fmt.Println(quote.Go())
 	// message := greetings.Hello("Gladys")
 	fmt.Println(message)
+	
+	for i, m := range messages {
+		fmt.Println(i, m)
+	}
+
 }
