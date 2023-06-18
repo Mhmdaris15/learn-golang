@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Form</title>
+    <link
+      rel="stylesheet"
+      href="./output.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet" /> -->
+
+    <style>
+      .glass-bg {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+  </head>
+
+  <body class="bg-red-900">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="w-full max-w-md">
+        <form class="bg-white glass-bg rounded-lg px-8 py-6 shadow-md">
+          <h2 class="text-2xl text-center font-bold text-white mb-6">
+            Sign In
+          </h2>
+          <div class="mb-4">
+            <label
+              class="block text-white font-bold mb-2"
+              for="email">
+              Email
+            </label>
+            <input
+              class="appearance-none bg-transparent border-b-2 border-white w-full py-2 px-3 text-white leading-tight focus:outline-none focus:border-red-300"
+              id="email"
+              type="email"
+              placeholder="Email" />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-white font-bold mb-2"
+              for="password">
+              Password
+            </label>
+            <input
+              class="appearance-none bg-transparent border-b-2 border-white w-full py-2 px-3 text-white leading-tight focus:outline-none focus:border-red-300"
+              id="password"
+              type="password"
+              placeholder="Password" />
+          </div>
+          <div class="flex items-center justify-between">
+            <button
+              class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button">
+              Sign In
+            </button>
+            <a
+              class="inline-block align-baseline font-bold text-sm text-white hover:text-red-400"
+              href="#">
+              Forgot Password?
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
